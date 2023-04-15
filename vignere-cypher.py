@@ -38,11 +38,12 @@ def CreatedCypherText():
         print(termcolor.colored(f"{Seperate[i]}", 'red'), end='', flush=True)
         time.sleep(0.09)
 
-# Print the output
+# Executes the all of the code
 Message=str(input("Enter the message:\n"))
 KeyWord=str(input("Enter the keyword:\n"))
 CipherText=MainCode(Message, KeyWord)
 ShowResults()
+# Print the output
 CreatedCypherText()
 
 # PRODUCE THE CIPHERTEXT OF THE FOLLOWING:
