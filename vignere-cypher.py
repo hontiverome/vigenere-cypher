@@ -1,4 +1,5 @@
 # ACTIVITY2 NO3 PSEUDOCODE WITH GIT COMMITS
+# State inputs:
 # Convert current positional character to a corresponding letter value (0-25)
 # Modulo 26 to have a range value of 0-25 only
 # Convert the value back to a letter
