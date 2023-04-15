@@ -1,7 +1,7 @@
 # ACTIVITY2 NO3 PSEUDOCODE WITH GIT COMMITS
 # State variables
-Message=""
-KeyWord=""
+Message=str(input("Enter the message\n:"))
+KeyWord=str(input("Enter the keyword\n:"))
 CipherText=""
 # Makes the conversion on each position
 KeyValues=[ord(j)-65 for j in KeyWord]
@@ -14,7 +14,7 @@ CipherValue=(LetterValue+KeyValues[LetterPosition])%26
 # Add/push the cipher letter to the final cipher text
 # Add current position to the keyword, (will serve as the end when the code reaches the last letter)
 # Print the output
-
+print(CipherValue)
 # PRODUCE THE CIPHERTEXT OF THE FOLLOWING:
 # Message: THISISTHELASTTASKHOORDAY
 # Key: KNIGHTS
