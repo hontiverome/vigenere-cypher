@@ -3,10 +3,10 @@
 Message=str(input("Enter the message\n:"))
 KeyWord=str(input("Enter the keyword\n:"))
 CipherText=""
-# Makes the conversion on each position
+# Makes the conversion on each position for the keyword
 KeyValues=[ord(j)-65 for j in KeyWord]
 LetterPosition=0
-    # Convert current positional character to a corresponding letter value (0-25)
+# Convert current positional character to a corresponding letter value based on the Message (0-25)
 for j in Message:
     LetterValue=ord(j) - 65   
     # Modulo 26 to have a range value of 0-25 only
