@@ -24,10 +24,13 @@ def MainCode(Message, KeyWord):
 # Defined functions that give design (animations, font, and color)
 def ShowResults():
     showResults = 'Here is your Cipher text:\n'
+    # Animated text that shows the sentence one by one
+    # Use of termcolor module that changes the color as well
     for i in range(len(showResults)):
         print(termcolor.colored(showResults[i], 'green'), end='', flush=True)
         time.sleep(0.1)
 def CreatedCypherText():
+    # Added space between each character via the use of 'join' function
     Seperate= ' '.join(CipherText)
     print(termcolor.colored(pyfiglet.figlet_format(Seperate, font="alligator", justify="center", width=220), 'red'))
     print("or:\n"	)
