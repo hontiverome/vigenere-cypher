@@ -1,9 +1,10 @@
 # ACTIVITY2 NO3 PSEUDOCODE WITH GIT COMMITS
 # State variables
 Message=""
-Keyword=""
+KeyWord=""
 CipherText=""
 # Convert current positional character to a corresponding letter value (0-25)
+KeyValues=[ord(j)-65 for j in KeyWord]
 # Modulo 26 to have a range value of 0-25 only
 # Convert the value back to a letter
 # Add/push the cipher letter to the final cipher text
