@@ -15,8 +15,9 @@ for j in Message:
     CipherCharacter=chr(CipherValue+65)
     # Add/push the cipher letter to the final cipher text
     CipherText+=CipherCharacter
-# Add current position to the keyword, (will serve as the end when the code reaches the last letter)
+    # Add current position to the keyword, (will serve as the end when the code reaches the last letter)
     LetterPosition=(LetterPosition+1)%len(KeyWord)
+
 # Print the output
 print(CipherValue)
 # PRODUCE THE CIPHERTEXT OF THE FOLLOWING:
