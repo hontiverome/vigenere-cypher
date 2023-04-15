@@ -7,8 +7,9 @@ CipherText=""
 KeyValues=[ord(j)-65 for j in KeyWord]
 LetterPosition=0
 # Convert current positional character to a corresponding letter value (0-25)
-LetterValue=ord(j)-65
+LetterValue=ord(j) - 65   
 # Modulo 26 to have a range value of 0-25 only
+CipherValue=(LetterValue+KeyValues[LetterPosition])%26
 # Convert the value back to a letter
 # Add/push the cipher letter to the final cipher text
 # Add current position to the keyword, (will serve as the end when the code reaches the last letter)
