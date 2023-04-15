@@ -20,6 +20,8 @@ for j in Message:
 
 # Print the output
 print(CipherText)
+
+
 # PRODUCE THE CIPHERTEXT OF THE FOLLOWING:
 # Message: THISISTHELASTTASKHOORDAY
 # Key: KNIGHTS
