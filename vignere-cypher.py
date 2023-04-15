@@ -6,13 +6,17 @@ CipherText=""
 # Makes the conversion on each position
 KeyValues=[ord(j)-65 for j in KeyWord]
 LetterPosition=0
-# Convert current positional character to a corresponding letter value (0-25)
-LetterValue=ord(j) - 65   
-# Modulo 26 to have a range value of 0-25 only
-CipherValue=(LetterValue+KeyValues[LetterPosition])%26
-# Convert the value back to a letter
-# Add/push the cipher letter to the final cipher text
+    # Convert current positional character to a corresponding letter value (0-25)
+for j in Message:
+    LetterValue=ord(j) - 65   
+    # Modulo 26 to have a range value of 0-25 only
+    CipherValue=(LetterValue+KeyValues[LetterPosition])%26
+    # Convert the value back to a letter
+    CipherCharacter=chr(CipherValue+65)
+    # Add/push the cipher letter to the final cipher text
+    CipherText+=CipherCharacter
 # Add current position to the keyword, (will serve as the end when the code reaches the last letter)
+    LetterPosition=(LetterPosition+1)%len(KeyWord)
 # Print the output
 print(CipherValue)
 # PRODUCE THE CIPHERTEXT OF THE FOLLOWING:
