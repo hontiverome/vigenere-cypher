@@ -19,7 +19,7 @@ for j in Message:
     LetterPosition=(LetterPosition+1)%len(KeyWord)
 
 # Print the output
-print(CipherValue)
+print(CipherText)
 # PRODUCE THE CIPHERTEXT OF THE FOLLOWING:
 # Message: THISISTHELASTTASKHOORDAY
 # Key: KNIGHTS
