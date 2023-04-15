@@ -21,8 +21,8 @@ def MainCode(Message, KeyWord):
     return CipherText
 
 # Print the output
-Message=str(input("Enter the message\n:"))
-KeyWord=str(input("Enter the keyword\n:"))
+Message=str(input("Enter the message:\n"))
+KeyWord=str(input("Enter the keyword:\n"))
 CipherText=MainCode(Message, KeyWord)
 print(CipherText)
 
