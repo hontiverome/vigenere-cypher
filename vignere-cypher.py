@@ -1,3 +1,4 @@
+import termcolor, time
 # ACTIVITY2 NO3 PSEUDOCODE WITH GIT COMMITS
 # State variables
 Message=""
@@ -20,10 +21,18 @@ def MainCode(Message, KeyWord):
         LetterPosition=(LetterPosition+1)%len(KeyWord)
     return CipherText
 
+# Defined functions that give design (animations)
+def ShowResults():
+    showResults = 'Here is your Cipher text:\n'
+    for i in range(len(showResults)):
+        print(termcolor.colored(showResults[i], 'green'), end='', flush=True)
+        time.sleep(0.1)
+
 # Print the output
 Message=str(input("Enter the message:\n"))
 KeyWord=str(input("Enter the keyword:\n"))
 CipherText=MainCode(Message, KeyWord)
+ShowResults()
 print(CipherText)
 
 # PRODUCE THE CIPHERTEXT OF THE FOLLOWING:
