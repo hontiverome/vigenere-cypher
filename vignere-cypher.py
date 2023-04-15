@@ -40,7 +40,7 @@ Message=str(input("Enter the message:\n"))
 KeyWord=str(input("Enter the keyword:\n"))
 CipherText=MainCode(Message, KeyWord)
 ShowResults()
-print(CipherText)
+CreatedCypherText()
 
 # PRODUCE THE CIPHERTEXT OF THE FOLLOWING:
 # Message: THISISTHELASTTASKHOORDAY
