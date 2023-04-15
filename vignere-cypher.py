@@ -1,4 +1,4 @@
-import termcolor, time
+import pyfiglet, termcolor, time
 # ACTIVITY2 NO3 PSEUDOCODE WITH GIT COMMITS
 # State variables
 Message=""
@@ -21,12 +21,19 @@ def MainCode(Message, KeyWord):
         LetterPosition=(LetterPosition+1)%len(KeyWord)
     return CipherText
 
-# Defined functions that give design (animations)
+# Defined functions that give design (animations, font, and color)
 def ShowResults():
     showResults = 'Here is your Cipher text:\n'
     for i in range(len(showResults)):
         print(termcolor.colored(showResults[i], 'green'), end='', flush=True)
         time.sleep(0.1)
+def CreatedCypherText():
+    Seperate= ' '.join(CipherText)
+    print(termcolor.colored(pyfiglet.figlet_format(Seperate, font="alligator", justify="center", width=220), 'red'))
+    print("or:\n"	)
+    for i in range(len(Seperate)):
+        print(termcolor.colored(f"{Seperate[i]}", 'red'), end='', flush=True)
+        time.sleep(0.09)
 
 # Print the output
 Message=str(input("Enter the message:\n"))
