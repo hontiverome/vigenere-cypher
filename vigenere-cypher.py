@@ -27,7 +27,7 @@ def ShowResults():
     # Animated text that shows the sentence one by one
     # Use of termcolor module that changes the color as well
     for i in range(len(showResults)):
-        print(temcolor.colored(showResults[i], 'green'), end='', flush=True)
+        print(termcolor.colored(showResults[i], 'green'), end='', flush=True)
         time.sleep(0.1)
 def CreatedCypherText():
     # Added space between each character via the use of 'join' function
